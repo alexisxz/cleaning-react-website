@@ -1,0 +1,117 @@
+#footer {
+    background-image: url(../../assets/contact_image.jpeg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+span {
+    display: block;
+}
+
+.container.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer__container-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-field {
+    width: 265px;
+    height: 150px;
+    background: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.footer-field:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.footer__container-imprint {
+    width: 100%;
+    background: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.footer__container-imprint:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.footer__copyright {
+    color: var(--color-white);
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES ======================== */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .footer__container-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES ======================== */
+@media screen and (max-width: 1024px) {
+    #footer {
+        height: 150vh;
+    }
+}
+
+/* ======================== MEDIA QUERIES (SMALL DEVICES ======================== */
+@media screen and (max-width: 600px) {
+    #footer {
+        height: 150vh;
+    }
+
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .footer__container-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-field {
+        width: 200px;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-field h5 {
+        font-size: 1rem;
+    }
+
+    .footer__container-imprint h5 {
+        font-size: 1rem;
+    }
+
+
+}
