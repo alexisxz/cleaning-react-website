@@ -1,19 +1,13 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import { Route, Routes } from 'react-router-dom'
+import CleaningHome from './routes/CleaningHome'
+import Home from './routes/Home'
 
 const App = () => {
     return (
-        <>
-            <Header />
-            <Nav />
-            <About />
-            <Contact />
-            <Footer />
-        </>
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cleaning' element={<CleaningHome />} />
+        </Routes>
     )
 }
 

@@ -1,0 +1,65 @@
+.home__container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.home__container-logo {
+    position: absolute;
+    width: 150px;
+    height: 89px;
+    left: 20px;
+    top: 20px;
+}
+
+.cleaning {
+    background-image: url(../../assets/cleaning_home_img.jpg);
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.cleaning-btn {
+    background-color: var(--color-primary-opacity);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logistic {
+    background-image: url(../../assets/warehouse_home_img.jpg);
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.logistic-btn {
+    background-color: var(--color-secondary-opacity);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__copyright {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES ======================== */
+@media screen and (max-width: 1024px) {
+    .home__container-logo {
+        width: 120px;
+        height: 59px;
+    }
+
+    .home__container {
+        flex-direction: column;
+    }
+}
